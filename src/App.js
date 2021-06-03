@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Banner from "./views/Banner";
 import About from "./views/About";
 import Experince from "./views/Experience";
+import Contact from "./views/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Banner />
           <About />
           <Experince />
+          <Contact />
         </div>
         <div className="w-20 bg-black">right side</div>
       </div>
