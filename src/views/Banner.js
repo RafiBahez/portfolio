@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Banner extends Component {
   render() {
     return (
-        <div className="bg-port-black h-full px-20 py-20">
+        <div className="bg-port-black h-screen px-20 py-20">
            
            <h3 className="text-white pb-5">Hi, my name is </h3>
            <h1 className="text-white text-5xl">Mohammad Rafi Bahez</h1>
