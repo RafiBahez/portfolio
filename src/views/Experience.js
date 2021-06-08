@@ -1,17 +1,14 @@
 import React, { Component } from "react";
+import Title from "../components/Title";
 
 class Experience extends Component {
   render() {
     return (
       <div className="bg-port-main h-screen px-20 py-20">
-        <div className="flex flex-row items-center gap-3">
-          <div>
-            <h1 className="text-white text-3xl pb-5">Places I've Worked </h1>
-          </div>
-          <div className="bg-second-darker h-1 w-32"></div>
-        </div>
+        
+        <Title showLeftLine="hidden">Places I've Worked </Title>
 
-        <div className="flex flex-row gap-10 pt-20">
+        <div className="flex flex-row gap-10">
           <div className="flex-0">
             <ul className="bg-second-darker text-white">
               <li className="py-3 px-4 pr-10 bg-port-second border-port-second">
