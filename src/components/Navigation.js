@@ -4,9 +4,9 @@ import React, { Component } from "react";
 class Navigation extends Component {
   render() {
     return (
-      <nav className="bg-port-black shadow-lg">
+      <nav className="bg-main-darker shadow-lg">
         <div className="container mx-auto flex flex-wrap items-center justify-between px-20 py-5  text-white">
-          <div className="text-port-orange uppercase">
+          <div className="text-port-second uppercase">
             <a href="https://rafibahez.github.io/portfolio">
               Bahez's Portfolio
             </a>
@@ -23,7 +23,7 @@ class Navigation extends Component {
               <li>
               <a href="#contact">Contact</a>
               </li>
-              <li className="border border-port-orange px-3 py-2">
+              <li className="border border-port-second px-3 py-2">
                 <a href="#resume">Resume</a>
               </li>
             </ul>

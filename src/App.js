@@ -12,7 +12,7 @@ function App() {
       <Navigation />
 
       <div className="grid grid-flow-col">
-        <div className="w-20 bg-black">left side</div>
+        <div className="w-20 bg-port-main">left side</div>
 
         <div className="grid-cols-10">
           <Banner />
@@ -20,7 +20,7 @@ function App() {
           <Experince />
           <Contact />
         </div>
-        <div className="w-20 bg-black">right side</div>
+        <div className="w-20 bg-port-main">right side</div>
       </div>
     </div>
   );

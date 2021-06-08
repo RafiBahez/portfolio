@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'port-black': '#141414',
-        'port-dark-black': '#1121212',
-        'port-orange': '#E1A87A',
-        'port-gray': '#B7B7B7'
+        'port-main': '#141414',
+        'main-darker': '#101010',
+        'port-second': '#B58762',
+        'second-darker': '#876449',
+        'port-gray': '#b7b7b7'
       }
     },
   },
