@@ -1,25 +1,23 @@
 import React, { Component } from "react";
 import Title from "../components/Title";
+import SideList from "../components/SideList";
+import SideListItem from "../components/SideListItem";
 
 class Experience extends Component {
   render() {
     return (
       <div className="bg-port-main h-screen px-20 py-20">
-        
         <Title showLeftLine="hidden">Places I've Worked </Title>
 
         <div className="flex flex-row gap-10">
           <div className="flex-0">
-            <ul className="bg-second-darker text-white">
-              <li className="py-3 px-4 pr-10 bg-port-second border-port-second">
-                Python Technology Services
-              </li>
-              <li className="py-3 px-4 pr-10 opacity-50">Kabul University</li>
-              <li className="py-3 px-4 pr-10 opacity-50">
-                Zawul Professional Services
-              </li>
-              <li className="py-3 px-4 pr-10 opacity-50">AZ Corporation</li>
-            </ul>
+            <SideList>
+              <SideListItem>Python Technology Services</SideListItem>
+              <SideListItem>Kabul University</SideListItem>
+              <SideListItem>Zawul Professional Services</SideListItem>
+              <SideListItem>AZ Corps</SideListItem>
+              <SideListItem>IT Center for Kabul University</SideListItem>
+            </SideList>
           </div>
 
           <div className="flex-1 text-white">

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import profile from "../assets/profile.jpg";
 
 class Title extends Component {
   render(props) {
