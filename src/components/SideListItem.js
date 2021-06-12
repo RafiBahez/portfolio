@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 
 class SideListItem extends Component {
-  render(props) {
+
+  render() {
+
     return (
-        <li className="py-3 px-4 pr-10 bg-port-second border-port-second">
-          {this.props.children}
-        </li>
+      <li
+        className={
+          "py-3 px-4 pr-10 bg-port-second border-port-second" +
+          (this.props.organization.id === this.props.activeLink
+            ? " bg-second-darker "
+            : " opacity-50 ")
+        }
+        onClick={() => this.props.handler(this.props.organization.id)}
+      >
+        {this.props.organization.name}
+      </li>
     );
   }
 }
