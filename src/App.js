@@ -12,6 +12,9 @@ import Footer from "./views/Footer";
 // leftside social media links
 import SocialMedia from "./views/SocialMedia";
 
+// rightside emailid 
+import EmailId from "./views/EmailId";
+
 function App() {
   return (
     <div className="App ">
@@ -29,7 +32,9 @@ function App() {
           <Contact />
           <Footer />
         </div>
-        <div className="w-20 bg-port-main">right side</div>
+        <div className="w-16 bg-main-darker">
+          <EmailId />
+        </div>
       </div>
     </div>
   );
