@@ -6,6 +6,9 @@ import About from "./views/About";
 import Experince from "./views/Experience";
 import Contact from "./views/Contact";
 
+// footer
+import Footer from "./views/Footer";
+
 // leftside social media links
 import SocialMedia from "./views/SocialMedia";
 
@@ -16,7 +19,7 @@ function App() {
 
       <div className="grid grid-flow-col">
         <div className="w-16 h-full bg-main-darker">
-            <SocialMedia />
+          <SocialMedia />
         </div>
 
         <div className="grid-cols-10">
@@ -24,6 +27,7 @@ function App() {
           <About />
           <Experince />
           <Contact />
+          <Footer />
         </div>
         <div className="w-20 bg-port-main">right side</div>
       </div>
