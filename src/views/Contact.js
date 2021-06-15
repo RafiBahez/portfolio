@@ -14,7 +14,7 @@ class Contact extends Component {
         </h3>
 
         <div className="flex justify-center">
-          <a className="text-white border border-port-second px-3 py-2">
+          <a href="mailto:rafibahez@mail.com" className="text-white border border-port-second px-3 py-2">
             Say Hello
           </a>
         </div>

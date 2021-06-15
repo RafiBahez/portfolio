@@ -12,7 +12,7 @@ class Banner extends Component {
            <h2 className="text-port-gray text-3xl">I'm Software Engineer & Full Stack Web Developer</h2>
            <p className="text-white text-base w-8/12 pt-5 pb-14"> I’m software engineer who specializes in building creative digital experiences. I learned and worked with many technologies over the past years, and now I love working with JavaScript and PHP.</p>
 
-           <a className="text-white border border-port-second px-3 py-2">Get in Touch</a>
+           <a href="#contact" className="text-white border border-port-second px-3 py-2">Get in Touch</a>
         </div>
     );
   }
