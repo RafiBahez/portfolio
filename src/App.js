@@ -21,7 +21,7 @@ function App() {
       <Navigation />
 
       <div className="grid grid-flow-col">
-        <div className="w-16 h-full bg-main-darker">
+        <div className="w-16 h-full bg-port-main">
           <SocialMedia />
         </div>
 
@@ -32,7 +32,7 @@ function App() {
           <Contact />
           <Footer />
         </div>
-        <div className="w-16 bg-main-darker">
+        <div className="w-16 bg-port-main">
           <EmailId />
         </div>
       </div>

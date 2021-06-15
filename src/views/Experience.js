@@ -143,7 +143,7 @@ class Experience extends Component {
     );
 
     return (
-      <div id="experience" className="bg-port-main h-screen px-20 py-20">
+      <div id="experience" className="bg-main-darker h-screen px-20 py-20">
         <Title showLeftLine="hidden">Places I've Worked </Title>
 
         <div className="flex flex-row gap-10">

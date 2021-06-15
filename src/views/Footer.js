@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
 <div
             id="contact"
-            className="h-28 flex flex-row items-center justify-center bg-main-darker gap-10"
+            className="h-20 flex flex-row items-center justify-center bg-port-main gap-10"
           >
             <div className="text-port-second">
               <h2>Design and Developed by BAHEZ</h2>
