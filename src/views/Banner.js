@@ -22,7 +22,7 @@ class Banner extends Component {
             e.preventDefault();
             window.location.href = "#contact";
           }}
-          className="text-white border border-port-second px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker"
+          className="text-white border border-port-second cursor-pointer px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker"
         >
           Get in Touch
         </button>

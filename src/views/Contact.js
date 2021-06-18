@@ -4,7 +4,7 @@ import Title from "../components/Title";
 class Contact extends Component {
   render() {
     return (
-      <div id="contact" className="flex flex-col items-center bg-main-darker h-100% px-20 py-20">
+      <div id="contact" name="contact" className="flex flex-col items-center bg-main-darker h-100% px-20 py-20">
         
         <Title showLeftLine="inline-block">Get in Touch</Title>
         
@@ -14,7 +14,7 @@ class Contact extends Component {
         </h3>
 
         <div className="flex justify-center">
-          <a href="mailto:rafibahez@mail.com" className="text-white border border-port-second px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker">
+          <a href="mailto:rafibahez@mail.com" className="text-white border border-port-second cursor-pointer px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker">
             Say Hello
           </a>
         </div>

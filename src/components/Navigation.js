@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React, { Component } from "react";
+import {Link} from "react-scroll";
 
 class Navigation extends Component {
   render() {
@@ -14,16 +15,16 @@ class Navigation extends Component {
 
           <div className="text-white">
             <ul className="flex flex-row items-center space-x-14">
-              <li className="display-block hover:text-gray-300">
-                <a href="#about">About</a>
+              <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                <Link activeClass="active" to="about"  spy={true} smooth={true} offset={50} duration={500}>About</Link>
               </li>
-              <li>
-                <a href="#experience">Experience</a>
+              <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                <Link activeClass="active" to="experience"  spy={true} smooth={true} offset={50} duration={500}>Experience</Link>
               </li>
-              <li>
-              <a href="#contact">Contact</a>
+              <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                <Link activeClass="active" to="contact"  spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
               </li>
-              <li className="border border-port-second px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker">
+              <li className="border border-port-second cursor-pointer px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
                 <a href="#resume">Resume</a>
               </li>
             </ul>
