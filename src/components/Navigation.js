@@ -23,7 +23,7 @@ class Navigation extends Component {
               <li>
               <a href="#contact">Contact</a>
               </li>
-              <li className="border border-port-second px-3 py-2">
+              <li className="border border-port-second px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker">
                 <a href="#resume">Resume</a>
               </li>
             </ul>
