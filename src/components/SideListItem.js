@@ -7,7 +7,7 @@ class SideListItem extends Component {
     return (
       <li
         className={
-          "py-3 px-4 pr-10 bg-port-second border-port-second" +
+          "py-3 px-4 pr-10 bg-port-second border-port-second cursor-pointer" +
           (this.props.organization.id === this.props.activeLink
             ? " bg-second-darker "
             : " opacity-50 ")
