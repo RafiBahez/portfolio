@@ -11,11 +11,11 @@ module.exports = {
         'port-gray': '#b7b7b7'
       },
       animation: {
-        fadeIn: "fadeIn 1.5s ease-in forwards"
+        fadeIn: "fadeIn 2.3s ease-in forwards"
       },
       keyframes: {
         fadeIn: {
-          "0%": { opacity: 0.1 },
+          "0%": { opacity: 0 },
           "100%": { opacity: 1 }
         }
       }
