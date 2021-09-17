@@ -11,7 +11,7 @@ module.exports = {
         'port-gray': '#b7b7b7'
       },
       animation: {
-        fadeIn: "fadeIn 2s ease-in forwards"
+        fadeIn: "fadeIn 1.5s ease-in forwards"
       },
       keyframes: {
         fadeIn: {
