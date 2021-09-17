@@ -17,7 +17,7 @@ npm install
 ### 3. Run Predeploy
 
 ```
-npm run deploy
+npm run predeploy
 ```
 ### 4. Run Deploy
 
