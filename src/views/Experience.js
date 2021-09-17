@@ -59,7 +59,7 @@ class Experience extends Component {
       {
         id: "org-zps",
         title: "Software Engineer",
-        duration: "January 2014 - FEBRuWARY 2018",
+        duration: "January 2014 - February 2018",
         responsibilities: [
           "Designed and developed multi-language Student Management Information System (SMIS) for university’s administration office resulted in increase in productivity by automating report generation processes and effective management.",
           "Developed SMIS using Laravel and used MySQL as a backend database, hosted locally in Apache server’s XAMPP package to reduce the access cost.",
@@ -86,7 +86,7 @@ class Experience extends Component {
       {
         id: "org-itck",
         title: "PC Technician",
-        duration: "Februwary 2007 - March 2010",
+        duration: "February 2007 - March 2010",
         responsibilities: [
           "Installed and configured computer hardware, Operating System and need applications of the PCs in Kabul University",
           "Maintenance of PCs from all faculties of Kabul University",
