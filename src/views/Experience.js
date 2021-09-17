@@ -35,6 +35,7 @@ class Experience extends Component {
         id: "org-pts",
         title: "Sr. Software Engineer",
         duration: "March 2018 - April 2021",
+        location: "Kabul, Afghanistan",
         responsibilities: [
           "Worked on designing and developing of 5 Software as a Service products for Afghanistan’s market. Collected requirements and analyzed them using Unified Modeling Language (UML).",
           "Led the creative design team to collaborate over prototype using Adobe XD, implement HCI, and responsive design principles. As a result designed a system to support both LTR & RTL languages and gained 100% of customers satisfaction. Used lazy loading feature to reduce time to load which provided better user experience.",
@@ -47,6 +48,7 @@ class Experience extends Component {
         id: "org-ku",
         title: "Assistant Professor",
         duration: "April 2015 - April 2021",
+        location: "Kabul, Afghanistan",
         responsibilities: [
           "Kabul University is the largest and most reputed public university in Afghanistan. The main responsibilities I had was teaching and preparing curriculum for the Computer Science Faculty. I taught the following classes:",
           "Software Engineering I & II",
@@ -60,6 +62,7 @@ class Experience extends Component {
         id: "org-zps",
         title: "Software Engineer",
         duration: "January 2014 - February 2018",
+        location: "Kabul, Afghanistan",
         responsibilities: [
           "Designed and developed multi-language Student Management Information System (SMIS) for university’s administration office resulted in increase in productivity by automating report generation processes and effective management.",
           "Developed SMIS using Laravel and used MySQL as a backend database, hosted locally in Apache server’s XAMPP package to reduce the access cost.",
@@ -72,6 +75,7 @@ class Experience extends Component {
         id: "org-az",
         title: "IT Manager",
         duration: "March 2010 - December 2010",
+        location: "Kabul, Afghanistan",
         responsibilities: [
           "Development of IT policy for AZ Corp",
           "Developing and mentanince of AZ Corp Servers",
@@ -87,6 +91,7 @@ class Experience extends Component {
         id: "org-itck",
         title: "PC Technician",
         duration: "February 2007 - March 2010",
+        location: "Kabul, Afghanistan",
         responsibilities: [
           "Installed and configured computer hardware, Operating System and need applications of the PCs in Kabul University",
           "Maintenance of PCs from all faculties of Kabul University",
@@ -159,14 +164,21 @@ class Experience extends Component {
                   : "";
               })}
             </h1>
-            <h1 className="text-sm pb-5 text-port-second">
+            <h1 className="text-sm text-port-second">
               {this.state.jobs.map((jobDuration) => {
                 return jobDuration.id === this.state.activeLink
                   ? jobDuration.duration
                   : "";
               })}
             </h1>
-            <h2 className="text-lg">Responsibilities:</h2>
+            <h1 className="text-md pb-5 text-white">
+              {this.state.jobs.map((jobLocation) => {
+                return jobLocation.id === this.state.activeLink
+                  ? jobLocation.location
+                  : "";
+              })}
+            </h1>
+            <h2 className="text-xl">Responsibilities:</h2>
             <ResponsibilityList>{jobs}</ResponsibilityList>
           </div>
         </div>
