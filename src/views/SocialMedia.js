@@ -4,7 +4,7 @@ class SocialMedia extends Component {
   render() {
     return (
       <div class="h-screen fixed">
-        <div className="h-screen w-16 flex flex-col justify-center gap-10">
+        <div className="h-screen w-16 flex flex-col justify-center space-y-10">
           <div className="flex justify-center">
             <a href="https://linkedin.com/in/rafibahez/" target="_blank" rel="noreferrer">
               <svg

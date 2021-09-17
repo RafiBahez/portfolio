@@ -5,12 +5,12 @@ class Footer extends Component {
     return (
 <div
             id="contact"
-            className="h-20 flex flex-row items-center justify-center bg-port-main gap-10"
+            className="h-20 flex flex-row items-center justify-center bg-port-main space-x-10"
           >
             <div className="text-port-second">
               <h2>Design and Developed by BAHEZ</h2>
             </div>
-            <div className="flex flex-row gap-5 text-port-second">
+            <div className="flex flex-row space-x-5 text-port-second">
               <h2>View Source</h2>
               <a
                 href="https://github.com/RafiBahez/portfolio"

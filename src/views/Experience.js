@@ -146,7 +146,7 @@ class Experience extends Component {
       <div id="experience" name="experience" className="bg-main-darker h-screen px-20 py-20">
         <Title showLeftLine="hidden">Places I've Worked </Title>
 
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row space-x-10">
           <div className="flex-0">
             <SideList>{organizations}</SideList>
           </div>

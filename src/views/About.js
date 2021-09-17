@@ -21,8 +21,8 @@ class About extends Component {
             <p className="text-white text-base w-8/12 pb-5">
               Here are a few technologies that I’ve been working with recently:
             </p>
-            <div className="flex flex-row gap-20 text-white">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-row text-white">
+              <div className="flex flex-col space-2 pr-20">
                 <div className="flex flex-row items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ class About extends Component {
                   Vuejs
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col space-2 pr-20">
                 <div className="flex flex-row items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ class About extends Component {
                   Wordpress
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col space-2 pr-20">
                 <div className="flex flex-row items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

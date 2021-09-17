@@ -4,7 +4,7 @@ import React from "react";
 const TickedListItem = (props) => {
   return (
     <li className="pb-2">
-      <div className="flex flex-row justify-start items-center gap-3 ">
+      <div className="flex flex-row justify-start items-center space-x-3">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
