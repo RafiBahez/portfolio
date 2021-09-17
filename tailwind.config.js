@@ -9,6 +9,15 @@ module.exports = {
         'port-second': '#B58762',
         'second-darker': '#876449',
         'port-gray': '#b7b7b7'
+      },
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0.1 },
+          "100%": { opacity: 1 }
+        }
       }
     },
   },

@@ -5,7 +5,7 @@ import Title from "../components/Title"
 class About extends Component {
   render() {
     return (
-      <div id="about" name="about" className="bg-main-darker h-screen px-20 py-20">
+      <div id="about" name="about" className="bg-main-darker h-screen px-20 py-20 js-show-on-scroll">
         
         <Title showLeftLine="hidden">About Me</Title>
 

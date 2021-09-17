@@ -6,7 +6,7 @@ class Banner extends Component {
   render() {
     let style = { height: "calc(100vh - 82px)" };
     return (
-      <div className="bg-main-darker px-20 py-28" style={style}>
+      <div className="bg-main-darker px-20 py-28 js-show-on-scroll" style={style}>
         <h3 className="text-white pb-5">Hi, my name is </h3>
         <h1 className="text-white text-5xl">Mohammad Rafi Bahez</h1>
         <h2 className="text-port-gray text-3xl">

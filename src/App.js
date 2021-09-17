@@ -17,7 +17,7 @@ import EmailId from "./views/EmailId";
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App bg-main-darker">
       <Navigation />
 
       <div className="grid grid-flow-col">

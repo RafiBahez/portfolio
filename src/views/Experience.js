@@ -29,6 +29,7 @@ class Experience extends Component {
     ],
 
     activeLink: "org-pts",
+    activeClass: "animate-fadeIn",
 
     jobs: [
       {
@@ -111,6 +112,7 @@ class Experience extends Component {
   };
 
   render() {
+    
     // show all organization in SideList.
     let organizations = null;
     organizations = (
@@ -148,7 +150,7 @@ class Experience extends Component {
     );
 
     return (
-      <div id="experience" name="experience" className="bg-main-darker h-screen px-20 py-20">
+      <div id="experience" name="experience" className="bg-main-darker h-screen px-20 py-20 js-show-on-scroll">
         <Title showLeftLine="hidden">Places I've Worked </Title>
 
         <div className="flex flex-row space-x-10">
