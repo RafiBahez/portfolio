@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import profile from "../assets/profile.jpg";
-import Title from "../components/Title"
+import Title from "../components/Title";
 
 class About extends Component {
   render() {
@@ -166,12 +165,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className="w-60 h-60 flex-0 justify-start bg-second-darker rounded-xl">
-            <img
-              className="w-60 h-60 rounded-xl transform -translate-x-3 -translate-y-3"
-              src={profile}
-            ></img>
-          </div>
+          <div></div>
         </div>
       </div>
     );
