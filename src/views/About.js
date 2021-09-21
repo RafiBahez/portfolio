@@ -4,20 +4,23 @@ import Title from "../components/Title";
 class About extends Component {
   render() {
     return (
-      <div id="about" name="about" className="bg-main-darker h-screen px-20 py-20 js-show-on-scroll">
-        
+      <div
+        id="about"
+        name="about"
+        className="bg-main-darker js-show-on-scroll sm:px-10 lg:px-20 h-screen"
+      >
         <Title showLeftLine="hidden">About Me</Title>
 
         <div className="flex flex-row items-center">
           <div className="flex-1">
-            <p className="text-white text-base w-8/12 pb-14">
+            <p className="text-white text-base pb-14">
               I have a masters degree in computer science from Technical
               University of Berlin. I’ve been working as a software engineer,
               full stack web developer and university lecturer for over 10
               years.
             </p>
 
-            <p className="text-white text-base w-8/12 pb-5">
+            <p className="text-white text-base pb-5">
               Here are a few technologies that I’ve been working with recently:
             </p>
             <div className="flex flex-row text-white">
@@ -164,8 +167,6 @@ class About extends Component {
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
       </div>
     );

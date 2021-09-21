@@ -23,7 +23,7 @@ function App() {
       </div>
 
       <div className="grid grid-flow-col">
-        <div className="w-16 bg-port-main">
+        <div className="hidden md:block w-16 bg-port-main">
           <SocialMedia />
         </div>
 
@@ -34,7 +34,7 @@ function App() {
           <Contact />
           <Footer />
         </div>
-        <div className="w-16 bg-port-main">
+        <div className="hidden md:block w-16 bg-port-main">
           <EmailId />
         </div>
       </div>
