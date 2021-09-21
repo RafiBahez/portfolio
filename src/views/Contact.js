@@ -9,10 +9,10 @@ class Contact extends Component {
         name="contact"
         className="bg-main-darker h-screen w-full js-show-on-scroll"
       >
-        <div className="flex flex-col items-center py-20 sm:px-10 lg:px-20">
+        <div className="flex flex-col items-center py-20 sx:px-8 lg:px-20">
           <Title showLeftLine="inline-block">Get in Touch</Title>
 
-          <h3 className="text-center text-white text-xl pb-20">
+          <h3 className="text-center text-white sx:text-lg md:text-xl pb-20">
             My inbox is always open, if you have a question or want to get in
             touch say hello!{" "}
           </h3>

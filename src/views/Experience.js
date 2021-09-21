@@ -154,15 +154,15 @@ class Experience extends Component {
         name="experience"
         className="bg-main-darker w-full js-show-on-scroll"
       >
-        <div className="py-20 sm:px-10 lg:px-20">
+        <div className="py-20 sx:px-8 lg:px-20">
           <Title showLeftLine="hidden">Places I've Worked </Title>
 
-          <div className="flex flex-row space-x-10">
+          <div className="flex sx:flex-col md:flex-row sx:space-x-0 md:space-x-10">
             <div className="flex-0">
               <SideList>{organizations}</SideList>
             </div>
 
-            <div className="flex-1 text-white">
+            <div className="flex-1 text-white sx:pt-6">
               <h1 className="text-2xl">
                 {this.state.jobs.map((jobTitle) => {
                   return jobTitle.id === this.state.activeLink

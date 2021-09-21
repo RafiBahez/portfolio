@@ -9,7 +9,7 @@ class About extends Component {
         name="about"
         className="bg-main-darker h-screen w-full js-show-on-scroll"
       >
-        <div className="py-20 sm:px-10 lg:px-20">
+        <div className="py-20 sx:px-8 lg:px-20">
           <Title showLeftLine="hidden">About Me</Title>
 
           <div className="flex flex-row items-center">
@@ -25,7 +25,7 @@ class About extends Component {
                 Here are a few technologies that I’ve been working with
                 recently:
               </p>
-              <div className="flex flex-row text-white">
+              <div className="flex sx:flex-col md:flex-row text-white">
                 <div className="flex flex-col space-2 pr-20">
                   <div className="flex flex-row items-center">
                     <svg
