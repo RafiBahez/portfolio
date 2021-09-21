@@ -12,16 +12,18 @@ import Footer from "./views/Footer";
 // leftside social media links
 import SocialMedia from "./views/SocialMedia";
 
-// rightside emailid 
+// rightside emailid
 import EmailId from "./views/EmailId";
 
 function App() {
   return (
     <div className="App bg-main-darker">
-      <Navigation />
+      <div>
+        <Navigation />
+      </div>
 
       <div className="grid grid-flow-col">
-        <div className="w-16 h-full bg-port-main">
+        <div className="w-16 bg-port-main">
           <SocialMedia />
         </div>
 

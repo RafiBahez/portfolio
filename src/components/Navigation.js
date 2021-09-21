@@ -1,35 +1,97 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React, { Component } from "react";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 class Navigation extends Component {
   render() {
     return (
-      <nav className="bg-main-darker shadow-lg">
-        <div className="container mx-auto flex flex-wrap items-center justify-between px-20 py-5  text-white">
-          <div className="text-port-second uppercase">
-            <a href="https://rafibahez.github.io/portfolio">
-              Bahez's Portfolio
-            </a>
-          </div>
+      <nav className="bg-main-darkder shadow-lg mx-auto">
+        <div className="w-full container mx-auto p-6">
+          <div className="flex items-center justify-between">
+            {
+              //Profile Logo
+            }
+            <div className="text-port-second uppercase">
+              <a href="https://rafibahez.github.io/portfolio">
+                Bahez's Portfolio
+              </a>
+            </div>
 
-          <div className="text-white">
-            <ul className="flex flex-row items-center space-x-14">
-              <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
-                <Link activeClass="active" to="about"  spy={true} smooth={true} offset={50} duration={500}>About</Link>
-              </li>
-              <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
-                <Link activeClass="active" to="experience"  spy={true} smooth={true} offset={50} duration={500}>Experience</Link>
-              </li>
-              <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
-                <Link activeClass="active" to="contact"  spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
-              </li>
-              <li className="border border-port-second cursor-pointer px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
-                <a href="#resume">Resume</a>
-              </li>
-            </ul>
+            {
+              //Primary Navbar items
+            }
+            <div className="text-white">
+              <ul className="hidden md:flex flex-row items-center space-x-6">
+                <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                  <Link
+                    activeClass="active"
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Experience
+                  </Link>
+                </li>
+                <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Contact
+                  </Link>
+                </li>
+                <li className="border border-port-second cursor-pointer px-3 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
+                  <a href="#resume">Resume</a>
+                </li>
+              </ul>
+            </div>
+            {
+              // Mobile Menu Button
+            }
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class=" w-6 h-6 text-port-second "
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+      {
+        // Mobile Menu
+      }
+      <div class="hidden">
+				<ul class="">
+					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+				</ul>
+			</div>
       </nav>
     );
   }

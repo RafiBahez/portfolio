@@ -5,11 +5,9 @@ import { Link } from "react-scroll";
 
 class Banner extends Component {
   render() {
-    let style = { height: "calc(100vh - 82px)" };
     return (
       <div
-        className="bg-main-darker px-20 py-28 js-show-on-scroll"
-        style={style}
+        className="bg-main-darker px-20 py-28 js-show-on-scroll h-screen"
       >
         <div className="flex flex-row items-center">
           <div className="flex-1 -mt-28">

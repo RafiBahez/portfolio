@@ -4,7 +4,7 @@ import Title from "../components/Title";
 class Contact extends Component {
   render() {
     return (
-      <div id="contact" name="contact" className="flex flex-col items-center bg-main-darker h-100% px-20 py-20 js-show-on-scroll">
+      <div id="contact" name="contact" className="flex flex-col items-center bg-main-darker h-screen px-20 py-20 js-show-on-scroll">
         
         <Title showLeftLine="inline-block">Get in Touch</Title>
         
