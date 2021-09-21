@@ -2,7 +2,24 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
 
+import MobileMenu from "./MobileMenu";
+
 class Navigation extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { mobileMenuOpen: false };
+
+    // registered events
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+  }
+
+  toggleMobileMenu() {
+    this.setState((prevState) => ({
+      mobileMenuOpen: !prevState.mobileMenuOpen,
+    }));
+  }
+
   render() {
     return (
       <nav className="bg-main-darkder shadow-lg mx-auto">
@@ -22,6 +39,8 @@ class Navigation extends Component {
             }
             <div className="text-white">
               <ul className="hidden md:flex flex-row items-center space-x-6">
+
+
                 <li className="cursor-pointer px-4 py-2 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main">
                   <Link
                     activeClass="active"
@@ -66,8 +85,11 @@ class Navigation extends Component {
             {
               // Mobile Menu Button
             }
-            <div class="md:hidden flex items-center">
-              <button class="outline-none mobile-menu-button">
+            <div className="md:hidden flex items-center">
+              <button
+                className="focus:outline-none"
+                onClick={this.toggleMobileMenu}
+              >
                 <svg
                   class=" w-6 h-6 text-port-second "
                   x-show="!showMenu"
@@ -83,15 +105,8 @@ class Navigation extends Component {
               </button>
             </div>
           </div>
+          <div>{this.state.mobileMenuOpen ? <MobileMenu /> : ""}</div>
         </div>
-      {
-        // Mobile Menu
-      }
-      <div class="hidden">
-				<ul class="">
-					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-				</ul>
-			</div>
       </nav>
     );
   }

@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 class Banner extends Component {
   render() {
     return (
-      <div className="bg-main-darker h-screen w-full js-show-on-scroll">
+      <div className="bg-main-darker h-screen w-full">
         <div className="flex flex-row items-center py-20 sm:px-10 lg:px-20">
           <div className="flex-1">
             <h3 className="text-white pb-5">Hi, my name is </h3>
