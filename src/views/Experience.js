@@ -112,7 +112,6 @@ class Experience extends Component {
   };
 
   render() {
-    
     // show all organization in SideList.
     let organizations = null;
     organizations = (
@@ -150,38 +149,44 @@ class Experience extends Component {
     );
 
     return (
-      <div id="experience" name="experience" className="bg-main-darker h-screen px-20 py-20 js-show-on-scroll">
-        <Title showLeftLine="hidden">Places I've Worked </Title>
+      <div
+        id="experience"
+        name="experience"
+        className="bg-main-darker w-full js-show-on-scroll"
+      >
+        <div className="py-20 sm:px-10 lg:px-20">
+          <Title showLeftLine="hidden">Places I've Worked </Title>
 
-        <div className="flex flex-row space-x-10">
-          <div className="flex-0">
-            <SideList>{organizations}</SideList>
-          </div>
+          <div className="flex flex-row space-x-10">
+            <div className="flex-0">
+              <SideList>{organizations}</SideList>
+            </div>
 
-          <div className="flex-1 text-white">
-            <h1 className="text-2xl">
-              {this.state.jobs.map((jobTitle) => {
-                return jobTitle.id === this.state.activeLink
-                  ? jobTitle.title
-                  : "";
-              })}
-            </h1>
-            <h1 className="text-sm text-port-second">
-              {this.state.jobs.map((jobDuration) => {
-                return jobDuration.id === this.state.activeLink
-                  ? jobDuration.duration
-                  : "";
-              })}
-            </h1>
-            <h1 className="text-md pb-5 text-white">
-              {this.state.jobs.map((jobLocation) => {
-                return jobLocation.id === this.state.activeLink
-                  ? jobLocation.location
-                  : "";
-              })}
-            </h1>
-            <h2 className="text-xl">Responsibilities:</h2>
-            <ResponsibilityList>{jobs}</ResponsibilityList>
+            <div className="flex-1 text-white">
+              <h1 className="text-2xl">
+                {this.state.jobs.map((jobTitle) => {
+                  return jobTitle.id === this.state.activeLink
+                    ? jobTitle.title
+                    : "";
+                })}
+              </h1>
+              <h1 className="text-sm text-port-second">
+                {this.state.jobs.map((jobDuration) => {
+                  return jobDuration.id === this.state.activeLink
+                    ? jobDuration.duration
+                    : "";
+                })}
+              </h1>
+              <h1 className="text-md pb-5 text-white">
+                {this.state.jobs.map((jobLocation) => {
+                  return jobLocation.id === this.state.activeLink
+                    ? jobLocation.location
+                    : "";
+                })}
+              </h1>
+              <h2 className="text-xl">Responsibilities:</h2>
+              <ResponsibilityList>{jobs}</ResponsibilityList>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 class Banner extends Component {
   render() {
     return (
-      <div className="bg-main-darker js-show-on-scroll h-screen">
+      <div className="bg-main-darker h-screen w-full js-show-on-scroll">
         <div className="flex flex-row items-center py-20 sm:px-10 lg:px-20">
           <div className="flex-1">
             <h3 className="text-white pb-5">Hi, my name is </h3>
@@ -23,16 +23,16 @@ class Banner extends Component {
               past years.
             </p>
             <Link
-            className="text-white border border-port-second cursor-pointer px-3 py-3 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker"
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            Get in Touch
-          </Link>
+              className="text-white border border-port-second cursor-pointer px-3 py-3 transition duration-500 ease-in-out transform hover:bg-port-second hover:text-port-main hover:border-main-darker"
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Get in Touch
+            </Link>
           </div>
 
           <div className="hidden md:flex w-60 h-60 flex-0 justify-start bg-second-darker rounded-xl mt-10">
