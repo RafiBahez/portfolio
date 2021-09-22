@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import Title from "../components/Title";
 
 class Contact extends Component {
+  state = {
+    // page data!
+    viewData: {
+      pageTitle: "Get in Touch",
+      message: "My inbox is always open, if you have a question or want to get in touch say hello!"
+    }
+  }
   render() {
     return (
       <div
@@ -10,11 +17,11 @@ class Contact extends Component {
         className="bg-main-darker h-screen w-full js-show-on-scroll"
       >
         <div className="flex flex-col items-center py-20 sx:px-8 lg:px-20">
-          <Title showLeftLine="inline-block">Get in Touch</Title>
+          <Title showLeftLine="inline-block">{this.state.viewData.pageTitle}</Title>
 
           <h3 className="text-center text-white sx:text-lg md:text-xl pb-20">
-            My inbox is always open, if you have a question or want to get in
-            touch say hello!{" "}
+            {this.state.viewData.message}
+            {" "}
           </h3>
 
           <div className="flex justify-center">

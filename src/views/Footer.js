@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 
 class Footer extends Component {
+  state = {
+    // page data!
+    viewData: {
+      designedBy: "Designed and Developed by BAHEZ"
+    },
+  };
+
   render() {
     return (
       <div
@@ -8,7 +15,7 @@ class Footer extends Component {
         className="h-20 flex sx:flex-col md:flex-row items-center justify-center bg-port-main space-x-10"
       >
         <div className="text-port-second sx:py-2 md:py-0">
-          <h2>Design and Developed by BAHEZ</h2>
+          <h2>{this.state.viewData.designedBy}</h2>
         </div>
         <div className="flex flex-row space-x-5 text-port-second sx:py-2 md:py-0">
           <h2>View Source</h2>

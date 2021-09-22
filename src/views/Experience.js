@@ -8,6 +8,10 @@ import TickedListItem from "../components/TickedListItem";
 
 class Experience extends Component {
   state = {
+    // page data!
+    viewData: {
+      pageTitle: "Places I've Worked"
+    },
     organizations: [
       {
         id: "org-pts",
@@ -155,7 +159,7 @@ class Experience extends Component {
         className="bg-main-darker w-full js-show-on-scroll"
       >
         <div className="py-20 sx:px-8 lg:px-20">
-          <Title showLeftLine="hidden">Places I've Worked </Title>
+          <Title showLeftLine="hidden">{this.state.viewData.pageTitle}</Title>
 
           <div className="flex sx:flex-col md:flex-row sx:space-x-0 md:space-x-10">
             <div className="flex-0">

@@ -2,6 +2,17 @@ import React, { Component } from "react";
 import Title from "../components/Title";
 
 class About extends Component {
+
+  state = {
+    // page data!
+    viewData: {
+      pageTitle: "About Me",
+      aboutMe: "I have a masters degree in computer science from Technical University of Berlin. I’ve been working as a software engineer, full stack web developer and university lecturer for over 10 years.",
+      descriptionSkills: "Here are a few technologies that I’ve been working with recently:",
+      message: " I'm software engineer who specializes in building creative digital experiences. I learned and worked with many technologies over the past years."
+    }
+  }
+
   render() {
     return (
       <div
@@ -10,20 +21,16 @@ class About extends Component {
         className="bg-main-darker h-screen w-full js-show-on-scroll"
       >
         <div className="py-20 sx:px-8 lg:px-20">
-          <Title showLeftLine="hidden">About Me</Title>
+          <Title showLeftLine="hidden">{this.state.viewData.pageTitle}</Title>
 
           <div className="flex flex-row items-center">
             <div className="flex-1">
               <p className="text-white text-base pb-14">
-                I have a masters degree in computer science from Technical
-                University of Berlin. I’ve been working as a software engineer,
-                full stack web developer and university lecturer for over 10
-                years.
+              {this.state.viewData.aboutMe}
               </p>
 
               <p className="text-white text-base pb-5">
-                Here are a few technologies that I’ve been working with
-                recently:
+                {this.state.viewData.descriptionSkills}
               </p>
               <div className="flex sx:flex-col md:flex-row text-white">
                 <div className="flex flex-col space-2 pr-20">
