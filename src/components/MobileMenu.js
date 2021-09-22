@@ -7,45 +7,41 @@ class MobileMenu extends Component {
       <div className="static">
         <div className="absolute top-20 left-0 w-full bg-port-second">
           <div className="flex flex-col justify-content-center text-center text-white my-4">
-            <div className="cursor-pointer hover:bg-second-darker py-2">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                About
-              </Link>
-            </div>
-            <div className="cursor-pointer hover:bg-second-darker py-2">
-              <Link
-                activeClass="active"
-                to="experience"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Experience
-              </Link>
-            </div>
-            <div className="cursor-pointer hover:bg-second-darker py-2">
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </div>
+            <Link
+              className="cursor-pointer hover:bg-second-darker py-2"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              About
+            </Link>
+            <Link
+              className="cursor-pointer hover:bg-second-darker py-2"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Experience
+            </Link>
+
+            <Link
+              className="cursor-pointer hover:bg-second-darker py-2"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contact
+            </Link>
+
             <div className="cursor-pointer hover:bg-second-darker py-2">
               <a
-                activeClass="active"
+                className="cursor-pointer hover:bg-second-darker py-2"
                 to="contact"
                 spy={true}
                 smooth={true}
