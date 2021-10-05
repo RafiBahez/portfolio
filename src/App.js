@@ -3,7 +3,8 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import Banner from "./views/Banner";
 import About from "./views/About";
-import Experince from "./views/Experience";
+import Experience from "./views/Experience";
+import Github from "./views/Github";
 import Contact from "./views/Contact";
 
 // footer
@@ -30,7 +31,8 @@ function App() {
         <div className="grid-cols-10">
           <Banner />
           <About />
-          <Experince />
+          <Experience />
+          <Github />
           <Contact />
           <Footer />
         </div>
