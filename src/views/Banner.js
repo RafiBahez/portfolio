@@ -9,7 +9,7 @@ class Banner extends Component {
     // page data!
     viewData: {
       greeting: "Hi, my name is ",
-      name: "Mohammad Rafi Bahez",
+      name: "Rafi Bahez",
       designation: " I'm a Software Engineer",
       message: " I'm software engineer who specializes in building creative digital experiences. I learned and worked with many technologies over the past years."
     }
