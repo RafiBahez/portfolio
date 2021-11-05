@@ -7,7 +7,7 @@ class About extends Component {
     viewData: {
       pageTitle: "About Me",
       aboutMe:
-        "I have a masters degree in computer science from Technical University of Berlin. I’ve been working as a software engineer, full stack web developer and university lecturer for over 10 years.",
+        "I have a masters degree in computer science from Technical University of Berlin, Germany. I’ve been working as a software engineer, full stack web developer and university lecturer for over 10 years.",
       descriptionSkills:
         "Here are a few technologies that I’ve been working with recently:",
       message:
