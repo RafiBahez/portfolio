@@ -47,7 +47,7 @@ class Experience extends Component {
         duration: "May 2021 - Current",
         location: "San Ramon, California",
         responsibilities: [
-          "worked in the interstate expansion of LottoShield. Integrated 25+ State's portals with LottoShield.",
+          "- worked in the interstate expansion of LottoShield. Integrated 25+ State's portals with LottoShield.",
           "Automation of report's collection and processing them using AWS Lambda",
           "Worked with wide range of data and implemented State specific and unique solutions to integrate them with LottoShield.",
           "Managed timely operations in different timezones and States with AWS provided solutions such as SQS, Lambda, SNS, and DynamoDB.",
