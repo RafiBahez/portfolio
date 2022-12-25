@@ -17,7 +17,6 @@ class Experience extends Component {
         id: "org-lottoshield",
         name: "LottoShield",
       },
-      
       {
         id: "org-pts",
         name: "Python Technology Services",
