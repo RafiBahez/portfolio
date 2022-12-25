@@ -11,7 +11,7 @@ class Banner extends Component {
       greeting: "Hi, my name is ",
       name: "Rafi Bahez",
       designation: " I'm a Software Engineer",
-      message: " I'm software engineer who specializes in building creative digital experiences. I learned and worked with many technologies over the past years."
+      message: " I'm software engineer who specializes in web app development. I learned and worked with many technologies over the past years."
     }
   }
 
